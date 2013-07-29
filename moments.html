@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Moments</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link rel="stylesheet" href="css/normalize.css">
+	
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<script src="js/instafeed.min.js"></script>
+
+		
+	</head>
+
+	<body>
+		<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        	target: 'instafeed',
+			userId: 483251169,
+			resolution: 'standard_resolution',
+		    accessToken: '483251169.2ba39b2.a4a05394627644a08e078a80cc30da0c',
+			link: 'true',
+			clientId: '2ba39b229f40483998f1730f4089c09f',
+
+			limit: '60'
+    });
+    feed.run();
+</script>
+
+		<div id="instafeed"></div>
+		
+	</body>
+</html>

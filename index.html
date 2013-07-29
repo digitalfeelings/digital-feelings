@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Digital Feelings</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="flexslider.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<script defer src="js/jquery.flexslider.js"></script>
+		<script defer src="js/jquery.flexslider-min.js"></script>
+
+		<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+		<script src="js/scripts.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "fade",
+					touch: "true",
+					controlsContainer: ".flex-container",
+					start: function(slider) {
+						$('.total-slides').text(slider.count);
+					},
+					after: function(slider) {
+						$('.current-slide').text(slider.currentSlide);
+					}
+				});
+			});
+		</script>
+
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "fade",
+					touch: "true",
+					controlsContainer: ".flex-container",
+					start: function(slider) {
+						$('.total-slides').text(slider.count);
+					},
+					after: function(slider) {
+						$('.current-slide').text(slider.currentSlide);
+					}
+				});
+			});
+		</script>
+
+
+		
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+		<div id="gallery">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+					</li>
+					<li>
+						<img src="images/kitchen_adventurer_lemon.jpg" />
+					</li>
+					<li>
+						<img src="images/kitchen_adventurer_donut.jpg" />
+					</li>
+					<li>
+						<img src="images/kitchen_adventurer_caramel.jpg" />
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		
+
+
+		<div id="container">
+			<ul id="portfolio">
+				<!--Dribbble feed-->	
+			</ul>
+		</div>
+
+		<div id="left"></div>
+	<div id="right"></div>
+	<div id="top"></div>
+	<div id="bottom"></div>
+
+		</div>
+	
+	</body>
+</html>
