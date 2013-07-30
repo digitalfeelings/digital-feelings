@@ -1,21 +1,30 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 		<title>Digital Feelings</title>
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/component.css">
+		<link rel="stylesheet" href="css/default.css">
 		<link rel="stylesheet" href="flexslider.css">
+		<link rel="stylesheet" href="css/style.css">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script src="js/jquery.min.js"></script>
+
+		<script src="js/modernizr.custom.91446.js"></script>
+
 
 		<script defer src="js/jquery.flexslider.js"></script>
 		<script defer src="js/jquery.flexslider-min.js"></script>
 
 		<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
 		<script src="js/scripts.js"></script>
+		<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
 
 		<script type="text/javascript" charset="utf-8">
 			$(window).load(function() {
@@ -54,42 +63,96 @@
 
 	</head>
 
-	<body>
-		<div id="wrapper">
-		<div id="gallery">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-					</li>
-					<li>
-						<img src="images/kitchen_adventurer_lemon.jpg" />
-					</li>
-					<li>
-						<img src="images/kitchen_adventurer_donut.jpg" />
-					</li>
-					<li>
-						<img src="images/kitchen_adventurer_caramel.jpg" />
-					</li>
-				</ul>
-			</div>
-		</div>
-
+	<body class="cbp-spmenu-push">
 		
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
+			<a href="#"><div class="glyph leftb">
+				<div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
+			</div></a>
+			<a href="#"><div class="glyph leftb">
+				<div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
+			</div></a>
+			<a href="#"><div class="glyph leftb">
+				<div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
+			</div></a>
+			<div id="rightb">
+			<a href="#">Hello</a>
+			<a href="#">Projects</a>
+			<a href="#">Contact</a>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div id="logo"><img src="images/logo.svg" alt="Digital Feelings" width="384" height="63.572"/></div>
+			<header class="clearfix"></header>
+			<div class="main">
+				<section class="buttonset">
+					<button id="showLeftPush">Show/Hide Left Push Menu</button>
+				</section>
+			</div>
+			<div id="wrapper">
+				<div id="gallery">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+							</li>
+							<li>
+								<img src="images/kitchen_adventurer_lemon.jpg" />
+							</li>
+							<li>
+								<img src="images/kitchen_adventurer_donut.jpg" />
+							</li>
+							<li>
+								<img src="images/kitchen_adventurer_caramel.jpg" />
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				
 
 
-		<div id="container">
-			<ul id="portfolio">
-				<!--Dribbble feed-->	
-			</ul>
-		</div>
+				<div id="dribbble">
+					<ul id="portfolio">
+						<!--Dribbble feed-->	
+					</ul>
+				</div>
 
-		<div id="left"></div>
-	<div id="right"></div>
-	<div id="top"></div>
-	<div id="bottom"></div>
+				
 
-		</div>
-	
+				
+
+			</div>
+	</div>
+	<div id="left"></div>
+				<div id="right"></div>
+				<div id="top"></div>
+				<div id="bottom"></div>
+	<script src="js/classie.js"></script>
+		<script>
+			var menuTop = document.getElementById( 'cbp-spmenu-s3' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuTop, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+			
+					</script>
+
+
+	<script>
+	document.getElementById("glyphs").addEventListener("click", function(e) {
+		var target = e.target;
+		if (target.tagName === "INPUT") {
+			target.select();
+		}
+	});
+	</script>
+
 	</body>
 </html>
