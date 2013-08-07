@@ -1,17 +1,162 @@
-html,body{background:#f2efe1;border:0;font-family:Arial,Helvetica,Sans-Serif;font-size:14px;margin:0;max-width:100%;padding:0}
-#top,#bottom,#left,#right{background:#fff;position:fixed}
-#left,#right{top:0;bottom:0;width:30px}
-#left{left:0}
-#right{right:0}
-#top,#bottom{left:0;right:0;height:30px}
-#top{top:0}
-#bottom{bottom:0}
-@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px){#top,#bottom,#left,#right{display:none}
-}.clearfix{clear:both;display:block;height:0;width:0}
-#dribbble{overflow:hidden;max-width:820px}
-#gallery{width:100%}
-ul#portfolio{list-style:none;overflow:hidden;max-width:720;}
-ul#portfolio li{float:left;margin:20px}
-ul#portfolio a{display:block;width:200px;height:150px;-webkit-transition:all 2s ease;opacity:.7;-webkit-filter:grayscale(1)}
-ul#portfolio a:hover{filter:none;opacity:1;-webkit-filter:grayscale(0)}
-#logo{margin-top:60px;margin-left:60px}
+html, body{
+	padding-top: 50px;
+	background-color: #e6e6e6 !important;
+	position:relative;
+	color:#525759;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+}
+.navbar{
+	-webkit-transition: top .2s ease-in;
+	width: 100%;
+	position:fixed;
+	top:0;
+	left:0;
+	font-family:'Open Sans', Sans-Serif;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:700;
+	background-color:transparent;
+	-webkit-transition: top .2s ease-in;
+	text-align: center;	
+}
+
+.navbar-brand{
+	font-family: 'Merriweather', serif;
+	color:#525759;
+	font-weight:400;
+	font-size:21px;
+
+}
+.navbar:hover{
+	background-color:rgba(206,204,205,.5);
+
+}
+.starter-template{
+	padding: 20px 15px 20px 15px;
+	text-align: center;
+}
+.starter-template h1{
+	font-family: 'Merriweather', serif;
+	font-weight:400;
+	font-size:28px;
+	line-height:1.8;
+}
+.starter-template p{
+	font-family:'Open Sans', Sans-Serif;
+	color:#e35e3f;
+	font-size:14px;
+	font-weight:700;
+	text-transform:uppercase;
+
+
+}
+.clearfix{
+	clear:both;
+	display:block;
+	height:0;
+	width:0;
+}
+.glyph {
+	text-align: center;
+	max-width: 500px;
+	margin: 0 auto;
+	margin: 0 auto;
+   	padding: 20px 15px 20px 15px;
+   	font-size:28px;
+	}
+
+.fs1 {
+    display: inline-block;
+    margin: 20px;
+}
+.col-lg-4 p{
+
+	font-weight:400;
+	font-size:18px;
+	line-height:1.8;
+	color: #cdcccc;
+	text-align: center;
+	font-family:'Open Sans', Sans-Serif;
+
+}
+.navbar-scrolling {
+	top: -4em; /* Height of the header */
+}
+.clearfix{
+	clear:both;
+	display:block;
+	height:0;
+	width:0;
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+ 
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+ 
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.9s;
+-moz-animation-delay: 0.9s;
+animation-delay: 0.9s;
+}
+
+#shotsByPlayerId img{
+	display: inline-block;
+	max-width: 320px;
+	}
+#shotsByPlayerId{
+	list-style:none;
+	margin:0;
+	padding:0;
+		}
+	
+#moments{
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 150px;
+	max-width: 1000px;
+}
+#moments img{
+	display: inline-block;
+	max-width: 300px;
+	margin:10px;
+	
+
+	}
+#mc_embed_signup{
+	padding: 50px;
+	padding-top: 150px;
+	margin:0 auto;
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	#shotsByPlayerId img{
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+		
+	}
+	#moments img{
+		max-width: 100%;
+		
+
+		overflow: hidden;
+	
+		border-radius: 0%;
+	}
+	}

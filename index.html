@@ -1,158 +1,419 @@
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-		<title>Digital Feelings</title>
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<title>Ignacio Valdés</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/component.css">
-		<link rel="stylesheet" href="css/default.css">
-		<link rel="stylesheet" href="flexslider.css">
-		<link rel="stylesheet" href="css/style.css">
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-		<script src="js/jquery.min.js"></script>
-
-		<script src="js/modernizr.custom.91446.js"></script>
-
-
-		<script defer src="js/jquery.flexslider.js"></script>
-		<script defer src="js/jquery.flexslider-min.js"></script>
-
-		<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
-		<script src="js/scripts.js"></script>
+		<link rel="stylesheet" href="css/icomoon.css">
 		<!--[if lte IE 7]><script src="lte-ie7.js"></script><![endif]-->
-
-		<script type="text/javascript" charset="utf-8">
-			$(window).load(function() {
-				$('.flexslider').flexslider({
-					animation: "fade",
-					touch: "true",
-					controlsContainer: ".flex-container",
-					start: function(slider) {
-						$('.total-slides').text(slider.count);
-					},
-					after: function(slider) {
-						$('.current-slide').text(slider.currentSlide);
-					}
-				});
-			});
-		</script>
-
-		<script type="text/javascript" charset="utf-8">
-			$(window).load(function() {
-				$('.flexslider').flexslider({
-					animation: "fade",
-					touch: "true",
-					controlsContainer: ".flex-container",
-					start: function(slider) {
-						$('.total-slides').text(slider.count);
-					},
-					after: function(slider) {
-						$('.current-slide').text(slider.currentSlide);
-					}
-				});
-			});
-		</script>
-
-
+		<link rel="stylesheet" href="flexslider.css">
 		
-
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/modernizr.custom.91446.js"></script>
+		<script src="js/prefixfree.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="jquery.flexslider-min.js"></script>
+		<script src="js/jquery.jribbble-1.0.1.ugly.js"></script>
+		<script src="js/instafeed.min.js"></script>
 	</head>
 
-	<body class="cbp-spmenu-push">
-		
-		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-top" id="cbp-spmenu-s3">
-			<a href="#"><div class="glyph leftb">
-				<div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div>
-			</div></a>
-			<a href="#"><div class="glyph leftb">
-				<div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div>
-			</div></a>
-			<a href="#"><div class="glyph leftb">
-				<div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div>
-			</div></a>
-			<div id="rightb">
-			<a href="#">Hello</a>
-			<a href="#">Projects</a>
-			<a href="#">Contact</a>
-			</div>
-		</nav>
+	<body>
+	<div class="box fade-in one">
+		<div class="navbar navbar-fixed-top">
+	      <div class="container">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="#home">·Ignacio Valdés·</a>
+	        <div class="nav-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#me">ME</a></li>
+	            <li><a href="#shots">SHOTS</a></li>
+	            <li><a href="#moments">MOMENTS</a></li>
+	            <li><a href="#connect">CONNECT</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </div>
 
-		<div class="container">
-			<div id="logo"><img src="images/logo.svg" alt="Digital Feelings" width="384" height="63.572"/></div>
-			<header class="clearfix"></header>
-			<div class="main">
-				<section class="buttonset">
-					<button id="showLeftPush">Show/Hide Left Push Menu</button>
-				</section>
-			</div>
-			<div id="wrapper">
-				<div id="gallery">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
-							</li>
-							<li>
-								<img src="images/kitchen_adventurer_lemon.jpg" />
-							</li>
-							<li>
-								<img src="images/kitchen_adventurer_donut.jpg" />
-							</li>
-							<li>
-								<img src="images/kitchen_adventurer_caramel.jpg" />
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				
-
-
-				<div id="dribbble">
-					<ul id="portfolio">
-						<!--Dribbble feed-->	
-					</ul>
-				</div>
-
-				
-
-				
-
-			</div>
+    <div id="home" class="flexslider">
+		<ul class="slides">
+			<li><img src="images/1.png" /></li>
+			<li><img src="images/2.png" /></li>
+			<li><img src="images/3.png" /></li>
+		</ul>
 	</div>
-	<div id="left"></div>
-				<div id="right"></div>
-				<div id="top"></div>
-				<div id="bottom"></div>
-	<script src="js/classie.js"></script>
+
+    <div class="container">
+    	
+        
+
+      <div id="me" class="starter-template">
+        <h1>Hi, I'm a León based designer of digital interactive products</h1>
+        <p class="lead">Love methodology and pixel-perfection</p>
+        
+      </div>
+
+		<div class:"row">
+			<div class="col-lg-4"><p>Communication, photography, graphics, interfaces, marketing, fashion and video. Tools to create successful and cool products.</p></div>
+			<div class="col-lg-4"><p>Cookies and caffeine, chai or chocolate while I read blogs, thrillers or architecture and design magazines.</p></div>
+			<div class="col-lg-4"><p>Swimming, walk with <a href="http://ignacio_valdes.vsco.co/media/51e30466596808605a000020">Milo</a>, watch Mad Men or <a href="https://vimeo.com/user10987337/likes">Vimeo</a> videos, my favorite pastimes.
+hobbies</p></div>
+		</div>
+
+
+    </div><!-- /.container -->
+
+	<div class="clearfix"></div>
+	<div class="glyph">
+			<a href="https://twitter.com/ignacio_valdes"><div class="fs1" aria-hidden="true" data-icon="&#xe000;"></div></a>
+			<a href="http://instagram.com/digitalfeelings"><div class="fs1" aria-hidden="true" data-icon="&#xe001;"></div></a>
+			<a href="https://twitter.com/ignacio_valdes"><div class="fs1" aria-hidden="true" data-icon="&#xe002;"></div></a>
+		</div>
+	
+	<div id="shots" class="container">
+		<ul id="shotsByPlayerId" class="row"></ul>
+	
+
+	</div>
+	<div id="moments" class="container">
+    	
+        <div id="instafeed"></div>
+
+    </div><!-- /.container -->
+
+    <div id="connect" class="container">
+		<!-- Begin MailChimp Signup Form -->
+			<link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+			<style type="text/css">
+				#mc_embed_signup{background:transparent; clear:left; font:14px Helvetica,Arial,sans-serif;  max-width:700px;}
+				/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+				   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+			</style>
+			<div id="mc_embed_signup">
+			<form action="http://digitalfeelings.us7.list-manage.com/subscribe/post?u=06174450d25517eda914a68ab&amp;id=823fe70cca" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+			<div class="mc-field-group">
+				<label for="mce-FNAME">First Name </label>
+				<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-LNAME">Last Name </label>
+				<input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+			</div>
+			<div class="mc-field-group size1of2">
+				<label for="mce-MMERGE5-month">Birthday </label>
+				<div class="datefield">
+					<span class="subfield monthfield"><input type="text" pattern="[0-9]*" value="MM" size="2" maxlength="2" name="MMERGE5[month]" id="mce-MMERGE5-month"></span> / 
+					<span class="subfield dayfield"><input type="text" pattern="[0-9]*" value="DD" size="2" maxlength="2" name="MMERGE5[day]" id="mce-MMERGE5-day"></span> 
+					<span class="small-meta nowrap">( mm / dd )</span>
+			        <div class="fake-date"><input type="hidden" class="required date" id="MMERGE5-fake-date" value=""></div>
+				</div>
+			</div><div class="mc-field-group">
+				<label for="mce-EMAIL">Email Address </label>
+				<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-MMERGE4">Timeline </label>
+				<select name="MMERGE4" class="required" id="mce-MMERGE4">
+				<option value=""></option>
+				<option value="1 Month">1 Month</option>
+			<option value="1 - 3 Months">1 - 3 Months</option>
+			<option value="3+ Months">3+ Months</option>
+
+				</select>
+			</div>
+			<div class="mc-field-group">
+				<label for="mce-MMERGE3">Tell me your story </label>
+				<input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3">
+			</div>
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>	<div class="clear"><input type="submit" value="Connect" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			</form>
+			</div>
+			<script type="text/javascript">
+			var fnames = new Array();var ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[5]='MMERGE5';ftypes[5]='birthday';fnames[0]='EMAIL';ftypes[0]='email';fnames[4]='MMERGE4';ftypes[4]='dropdown';fnames[3]='MMERGE3';ftypes[3]='text';
+			try {
+			    var jqueryLoaded=jQuery;
+			    jqueryLoaded=true;
+			} catch(err) {
+			    var jqueryLoaded=false;
+			}
+			var head= document.getElementsByTagName('head')[0];
+			if (!jqueryLoaded) {
+			    var script = document.createElement('script');
+			    script.type = 'text/javascript';
+			    script.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+			    head.appendChild(script);
+			    if (script.readyState && script.onload!==null){
+			        script.onreadystatechange= function () {
+			              if (this.readyState == 'complete') mce_preload_check();
+			        }    
+			    }
+			}
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+			head.appendChild(script);
+			var err_style = '';
+			try{
+			    err_style = mc_custom_error_style;
+			} catch(e){
+			    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+			}
+			var head= document.getElementsByTagName('head')[0];
+			var style= document.createElement('style');
+			style.type= 'text/css';
+			if (style.styleSheet) {
+			  style.styleSheet.cssText = err_style;
+			} else {
+			  style.appendChild(document.createTextNode(err_style));
+			}
+			head.appendChild(style);
+			setTimeout('mce_preload_check();', 250);
+
+			var mce_preload_checks = 0;
+			function mce_preload_check(){
+			    if (mce_preload_checks>40) return;
+			    mce_preload_checks++;
+			    try {
+			        var jqueryLoaded=jQuery;
+			    } catch(err) {
+			        setTimeout('mce_preload_check();', 250);
+			        return;
+			    }
+			    try {
+			        var validatorLoaded=jQuery("#fake-form").validate({});
+			    } catch(err) {
+			        setTimeout('mce_preload_check();', 250);
+			        return;
+			    }
+			    mce_init_form();
+			}
+			function mce_init_form(){
+			    jQuery(document).ready( function($) {
+			      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+			      var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
+			      $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+			      options = { url: 'http://digitalfeelings.us7.list-manage.com/subscribe/post-json?u=06174450d25517eda914a68ab&id=823fe70cca&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+			                    beforeSubmit: function(){
+			                        $('#mce_tmp_error_msg').remove();
+			                        $('.datefield','#mc_embed_signup').each(
+			                            function(){
+			                                var txt = 'filled';
+			                                var fields = new Array();
+			                                var i = 0;
+			                                $(':text', this).each(
+			                                    function(){
+			                                        fields[i] = this;
+			                                        i++;
+			                                    });
+			                                $(':hidden', this).each(
+			                                    function(){
+			                                        var bday = false;
+			                                        if (fields.length == 2){
+			                                            bday = true;
+			                                            fields[2] = {'value':1970};//trick birthdays into having years
+			                                        }
+			                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+			                                    		this.value = '';
+												    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+			                                    		this.value = '';
+												    } else {
+												        if (/\[day\]/.test(fields[0].name)){
+			    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+												        } else {
+			    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+				                                        }
+				                                    }
+			                                    });
+			                            });
+			                        return mce_validator.form();
+			                    }, 
+			                    success: mce_success_cb
+			                };
+			      $('#mc-embedded-subscribe-form').ajaxForm(options);
+
+
+			    });
+			}
+			function mce_success_cb(resp){
+			    $('#mce-success-response').hide();
+			    $('#mce-error-response').hide();
+			    if (resp.result=="success"){
+			        $('#mce-'+resp.result+'-response').show();
+			        $('#mce-'+resp.result+'-response').html(resp.msg);
+			        $('#mc-embedded-subscribe-form').each(function(){
+			            this.reset();
+			    	});
+			    } else {
+			        var index = -1;
+			        var msg;
+			        try {
+			            var parts = resp.msg.split(' - ',2);
+			            if (parts[1]==undefined){
+			                msg = resp.msg;
+			            } else {
+			                i = parseInt(parts[0]);
+			                if (i.toString() == parts[0]){
+			                    index = parts[0];
+			                    msg = parts[1];
+			                } else {
+			                    index = -1;
+			                    msg = resp.msg;
+			                }
+			            }
+			        } catch(e){
+			            index = -1;
+			            msg = resp.msg;
+			        }
+			        try{
+			            if (index== -1){
+			                $('#mce-'+resp.result+'-response').show();
+			                $('#mce-'+resp.result+'-response').html(msg);            
+			            } else {
+			                err_id = 'mce_tmp_error_msg';
+			                html = '<div id="'+err_id+'" style="'+err_style+'"> '+msg+'</div>';
+
+			                var input_id = '#mc_embed_signup';
+			                var f = $(input_id);
+			                if (ftypes[index]=='address'){
+			                    input_id = '#mce-'+fnames[index]+'-addr1';
+			                    f = $(input_id).parent().parent().get(0);
+			                } else if (ftypes[index]=='date'){
+			                    input_id = '#mce-'+fnames[index]+'-month';
+			                    f = $(input_id).parent().parent().get(0);
+			                } else {
+			                    input_id = '#mce-'+fnames[index];
+			                    f = $().parent(input_id).get(0);
+			                }
+			                if (f){
+			                    $(f).append(html);
+			                    $(input_id).focus();
+			                } else {
+			                    $('#mce-'+resp.result+'-response').show();
+			                    $('#mce-'+resp.result+'-response').html(msg);
+			                }
+			            }
+			        } catch(e){
+			            $('#mce-'+resp.result+'-response').show();
+			            $('#mce-'+resp.result+'-response').html(msg);
+			        }
+			    }
+			}
+
+			</script>
+			<!--End mc_embed_signup-->
+    </div>
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "fade",
+					controlNav: false,
+					directionNav: false,  
+					touch: "true",
+					controlsContainer: ".flex-container",
+					start: function(slider) {
+						$('.total-slides').text(slider.count);
+					},
+					after: function(slider) {
+						$('.current-slide').text(slider.currentSlide);
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+		$('.nav a').click(
+						function(){
+							var target = $(this).attr('href');
+							var targetLoc = $(target).offset().top;
+							$('html, body').stop().animate({scrollTop : targetLoc}, 1000,'easeOutQuad');
+							return false; 
+						});
+
+
+						//Requires JQuery or Zepto
+						$(document).ready(function(){
+
+						// Cache Header
+						var $header = $('.navbar');
+
+						// Get height of global-header to use later as starting point
+						var $hHeight = $header.height();
+
+						// Set initial position to current position on page
+						var prevTop = $(window).scrollTop();
+
+						// Scroll event
+						$(window).on('scroll', function(e) {
+						  st = $(this).scrollTop(); // Set scroll location
+						  if (st > prevTop && st > $hHeight) { 
+						    $header.addClass('navbar-scrolling');
+						  } else {
+						    $header.removeClass('navbar-scrolling');
+						  }
+						  prevTop = st;
+						});
+
+						});
+				</script>
 		<script>
-			var menuTop = document.getElementById( 'cbp-spmenu-s3' ),
-				showLeftPush = document.getElementById( 'showLeftPush' ),
-				body = document.body;
-
-			showLeftPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toright' );
-				classie.toggle( menuTop, 'cbp-spmenu-open' );
-				disableOther( 'showLeftPush' );
-			};
-			
-					</script>
-
-
-	<script>
 	document.getElementById("glyphs").addEventListener("click", function(e) {
 		var target = e.target;
 		if (target.tagName === "INPUT") {
 			target.select();
 		}
 	});
-	</script>
 
+
+	</script>
+	<script>
+        var callback = function (playerShots) {
+            var html = '';
+
+            $('h2 b').text(playerShots.shots[0].player.name);
+
+            $.each(playerShots.shots, function (i, shot) {
+                //html += '<li><h3>' + shot.title + '</h3>';
+                html += '<li class="col-6 col-lg-4"><a href="' + shot.url + '">';
+                html += '<img src="' + shot.image_url + '" ';
+                html += 'alt="' + shot.title + '"></a></li>';
+            });
+
+            $('#shotsByPlayerId').html(html);
+        };
+
+        $.jribbble.getShotsByPlayerId('ignaciovaldesreyes', callback, {page: 1, per_page: 3});
+    </script>
+    <script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'user',
+		        	target: 'instafeed',
+					userId: 483251169,
+					resolution: 'standard_resolution',
+				    accessToken: '483251169.2ba39b2.a4a05394627644a08e078a80cc30da0c',
+					link: 'true',
+					clientId: '2ba39b229f40483998f1730f4089c09f',
+
+					limit: '60'
+		    });
+		    feed.run();
+		</script>
+		</div>
 	</body>
 </html>
